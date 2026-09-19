@@ -1,0 +1,878 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f7f2eb;
+    color: #2b2b2b;
+}
+
+.header {
+    width: 100%;
+    background-color: #f7f2eb;
+    border-bottom: 1px solid #ded6cc;
+}
+
+.contenedor-header {
+    width: 100%;
+    height: 120px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding-left: 45px;
+    padding-right: 10%;
+}
+.logo {
+    text-decoration: none;
+    color: #1f1f1f;
+    font-family: Georgia, serif;
+    font-size: 26px;
+    letter-spacing: 3px;
+}
+.logo img {
+    width: 120px;
+    height: auto;
+    display: block;
+}
+.nav {
+    display: flex;
+    gap: 32px;
+}
+
+.nav a {
+    text-decoration: none;
+    color: #4a4540;
+    font-size: 15px;
+    transition: 0.3s;
+}
+
+.hero {
+    width: 100%;
+    height: 650px;
+   background-image: url("../img/hero-le-male-elixir-final.png");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}.hero-contenido {
+    width: 520px;
+    max-width: 520px;
+    margin-left: 6%;
+    padding-top: 55px;
+}
+
+.hero-subtitulo {
+    display: inline-block;
+    margin-bottom: 28px;
+    font-size: 15px;
+    font-weight: 600;
+    letter-spacing: 4px;
+    text-transform: uppercase;
+    color: #9b5f20;
+}
+
+.hero-subtitulo::after {
+    content: "";
+    display: block;
+    width: 110px;
+    height: 2px;
+    background-color: #9b5f20;
+    margin: 18px auto 0;
+}
+
+.hero h1 {
+    margin-bottom: 24px;
+    font-family: Georgia, "Times New Roman", serif;
+    font-size: 58px;
+    line-height: 1.05;
+    font-weight: 400;
+    font-style: italic;
+    color: #1f1b18;
+}
+
+.hero-texto {
+    margin-bottom: 28px;
+    max-width: 430px;
+
+    font-family: Georgia, "Times New Roman", serif;
+    font-size: 20px;
+    line-height: 1.6;
+    font-weight: 400;
+
+    color: #1f1b18;
+}
+.btn-hero {
+    display: inline-block;
+    padding: 16px 32px;
+
+    background-color: #1f1b18;
+    color: #c7954a;
+
+    font-family: Georgia, "Times New Roman", serif;
+    font-size: 15px;
+    font-style: italic;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+    text-decoration: none;
+
+    border: 1px solid #c7954a;
+    transition: 0.3s ease;
+}
+
+.btn-hero:hover {
+    background-color: #c7954a;
+    color: #1f1b18;
+    border-color: #c7954a;
+}
+
+.hero-imagen {
+    width: 100%;
+    height: 480px;
+
+    background-color: #e9dfd3;
+    border-radius: 2px;
+}
+.hero h1 span {
+    color: #a96816;
+}
+/* ==================================================
+   COLECCIONES - PERFUMES MUJER / HOMBRE
+================================================== */
+
+.colecciones {
+    background: #f8f3eb;
+    padding: 55px 6% 65px;
+}
+
+/* Encabezado */
+
+.colecciones-encabezado {
+    text-align: center;
+    margin-bottom: 35px;
+}
+
+.colecciones-encabezado span {
+    display: block;
+    font-size: 13px;
+    letter-spacing: 4px;
+    color: #a87328;
+    font-weight: 600;
+    margin-bottom: 8px;
+}
+
+.colecciones-encabezado h2 {
+    margin: 0;
+    font-family: Georgia, "Times New Roman", serif;
+    font-size: clamp(36px, 4vw, 55px);
+    font-weight: 400;
+    font-style: italic;
+    color: #17130f;
+}
+
+.linea-dorada {
+    width: 48px;
+    height: 1px;
+    background: #b98945;
+    margin: 13px auto 0;
+}
+
+
+/* Contenedor de tarjetas */
+
+.colecciones-grid {
+    max-width: 1350px;
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 18px;
+}
+
+
+/* Tarjeta */
+
+.coleccion-card {
+    position: relative;
+    min-height: 290px;
+
+    display: grid;
+    grid-template-columns: 48% 52%;
+
+    overflow: hidden;
+
+    background: #fbf8f2;
+
+    border: 1px solid rgba(184, 137, 69, 0.35);
+    border-radius: 12px;
+
+    box-shadow: 0 10px 28px rgba(53, 40, 25, 0.08);
+
+    text-decoration: none;
+    color: inherit;
+
+    transition:
+        transform 0.35s ease,
+        box-shadow 0.35s ease,
+        border-color 0.35s ease;
+}
+
+
+/* Hover tarjeta */
+
+.coleccion-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 18px 40px rgba(53, 40, 25, 0.14);
+    border-color: rgba(184, 137, 69, 0.7);
+}
+
+
+/* Información */
+
+.coleccion-info {
+    position: relative;
+    z-index: 2;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+
+    padding: 35px 15px 30px 45px;
+}
+
+
+.coleccion-subtitulo {
+    font-size: 13px;
+    letter-spacing: 3px;
+    font-weight: 600;
+    color: #9b6929;
+    margin-bottom: 3px;
+}
+
+
+.coleccion-info h3 {
+    margin: 0 0 10px;
+
+    font-family: Georgia, "Times New Roman", serif;
+    font-size: clamp(42px, 4vw, 58px);
+
+    font-weight: 400;
+    color: #15110d;
+
+    line-height: 1;
+}
+
+
+.coleccion-info p {
+    margin: 0 0 22px;
+
+    font-family: Georgia, "Times New Roman", serif;
+
+    font-size: 16px;
+    line-height: 1.35;
+
+    color: #2b251e;
+}
+
+
+/* Botón */
+
+.coleccion-boton {
+    width: fit-content;
+
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+
+    padding: 13px 22px;
+
+    background: #d5aa67;
+    color: #18130e;
+
+    font-size: 12px;
+    font-weight: 600;
+    letter-spacing: 1px;
+
+    border-radius: 2px;
+
+    transition:
+        background 0.3s ease,
+        color 0.3s ease;
+}
+
+
+.coleccion-card:hover .coleccion-boton {
+    background: #17130f;
+    color: #dcb875;
+}
+
+
+/* Detalle inferior */
+
+.coleccion-detalle {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+
+    margin-top: 20px;
+
+    color: #a17132;
+
+    font-size: 10px;
+    letter-spacing: 2.5px;
+    white-space: nowrap;
+}
+
+
+.coleccion-detalle span {
+    width: 25px;
+    height: 1px;
+    background: #c49b60;
+}
+
+
+/* Imagen */
+
+.coleccion-imagen {
+    position: relative;
+    height: 100%;
+    overflow: hidden;
+}
+
+
+.coleccion-imagen img {
+    width: 100%;
+    height: 100%;
+
+    display: block;
+
+    object-fit: cover;
+    object-position: center;
+
+    transition: transform 0.6s ease;
+}
+
+
+.coleccion-card:hover .coleccion-imagen img {
+    transform: scale(1.04);
+}
+
+
+/* Degradado entre texto e imagen */
+
+.coleccion-imagen::before {
+    content: "";
+
+    position: absolute;
+    z-index: 1;
+
+    top: 0;
+    bottom: 0;
+    left: 0;
+
+    width: 65px;
+
+    background: linear-gradient(
+        to right,
+        #fbf8f2 0%,
+        rgba(251, 248, 242, 0) 100%
+    );
+
+    pointer-events: none;
+}
+
+
+/* ==================================================
+   RESPONSIVE
+================================================== */
+
+@media (max-width: 950px) {
+
+    .colecciones {
+        padding: 45px 25px 55px;
+    }
+
+    .colecciones-grid {
+        grid-template-columns: 1fr;
+        max-width: 700px;
+    }
+
+    .coleccion-card {
+        min-height: 280px;
+    }
+}
+
+
+@media (max-width: 600px) {
+
+    .colecciones {
+        padding: 40px 15px 45px;
+    }
+
+    .colecciones-encabezado {
+        margin-bottom: 25px;
+    }
+
+    .colecciones-encabezado span {
+        font-size: 10px;
+        letter-spacing: 3px;
+    }
+
+    .colecciones-encabezado h2 {
+        font-size: 34px;
+    }
+
+
+    .coleccion-card {
+        grid-template-columns: 1fr;
+        min-height: auto;
+    }
+
+
+    .coleccion-info {
+        padding: 30px 25px;
+    }
+
+
+    .coleccion-info h3 {
+        font-size: 45px;
+    }
+
+
+    .coleccion-imagen {
+        height: 240px;
+    }
+
+
+    .coleccion-imagen::before {
+        top: 0;
+        left: 0;
+        right: 0;
+        bottom: auto;
+
+        width: 100%;
+        height: 50px;
+
+        background: linear-gradient(
+            to bottom,
+            #fbf8f2 0%,
+            rgba(251, 248, 242, 0) 100%
+        );
+    }
+}
+/* ==================================================
+   PAGINA PERFUMES DE MUJER
+================================================== */
+
+/* Portada */
+
+.portada-catalogo {
+    min-height: 300px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    padding: 55px 20px;
+
+    background:
+        radial-gradient(
+            circle at 75% 50%,
+            rgba(222, 176, 165, 0.22),
+            transparent 35%
+        ),
+        linear-gradient(
+            135deg,
+            #f8f2e9 0%,
+            #f3e7dc 50%,
+            #faf6ef 100%
+        );
+
+    border-bottom: 1px solid rgba(176, 126, 57, 0.18);
+}
+
+
+/* Texto portada */
+
+.portada-catalogo-texto {
+    max-width: 850px;
+    text-align: center;
+}
+
+
+.catalogo-etiqueta {
+    display: block;
+
+    margin-bottom: 12px;
+
+    color: #a46f2b;
+
+    font-size: 12px;
+    font-weight: 600;
+    letter-spacing: 4px;
+}
+
+
+.portada-catalogo h1 {
+    margin: 0 0 16px;
+
+    font-family: Georgia, "Times New Roman", serif;
+
+    font-size: clamp(45px, 5vw, 68px);
+    font-weight: 400;
+
+    color: #17130f;
+
+    line-height: 1.05;
+}
+
+
+.portada-catalogo h1 em {
+    color: #b17a46;
+    font-weight: 400;
+}
+
+
+.portada-catalogo p {
+    max-width: 650px;
+
+    margin: 0 auto;
+
+    font-family: Georgia, "Times New Roman", serif;
+
+    font-size: 18px;
+    line-height: 1.6;
+
+    color: #51483e;
+}
+
+
+/* Línea debajo del texto */
+
+.portada-catalogo .linea-dorada {
+    width: 45px;
+    height: 1px;
+
+    margin: 22px auto 0;
+
+    background: #b88945;
+}
+
+
+/* ==================================================
+   CATALOGO
+================================================== */
+
+.catalogo {
+    padding: 60px 6% 80px;
+
+    background: #fbf8f2;
+}
+
+
+.catalogo-encabezado {
+    max-width: 750px;
+
+    margin: 0 auto 45px;
+
+    text-align: center;
+}
+
+
+.catalogo-encabezado > span {
+    display: block;
+
+    margin-bottom: 8px;
+
+    color: #a46f2b;
+
+    font-size: 11px;
+    font-weight: 600;
+    letter-spacing: 4px;
+}
+
+
+.catalogo-encabezado h2 {
+    margin: 0 0 12px;
+
+    font-family: Georgia, "Times New Roman", serif;
+
+    font-size: clamp(35px, 4vw, 50px);
+    font-weight: 400;
+    font-style: italic;
+
+    color: #17130f;
+}
+
+
+.catalogo-encabezado p {
+    margin: 0;
+
+    font-family: Georgia, "Times New Roman", serif;
+
+    font-size: 17px;
+
+    color: #62584d;
+}
+
+
+/* Lugar donde irán los perfumes */
+
+.catalogo-grid {
+    max-width: 1250px;
+
+    margin: 0 auto;
+
+    display: grid;
+
+    grid-template-columns:
+        repeat(3, minmax(0, 1fr));
+
+    gap: 25px;
+}
+
+
+/* ==================================================
+   RESPONSIVE PAGINA MUJER
+================================================== */
+
+@media (max-width: 900px) {
+
+    .catalogo-grid {
+        grid-template-columns:
+            repeat(2, minmax(0, 1fr));
+    }
+}
+
+
+@media (max-width: 600px) {
+
+    .portada-catalogo {
+        min-height: 250px;
+        padding: 40px 20px;
+    }
+
+    .portada-catalogo h1 {
+        font-size: 42px;
+    }
+
+    .portada-catalogo p {
+        font-size: 16px;
+    }
+
+    .catalogo {
+        padding: 45px 18px 60px;
+    }
+
+    .catalogo-grid {
+        grid-template-columns: 1fr;
+    }
+}
+/* =====================================
+   CATÁLOGO PERFUMES MUJER
+===================================== */
+
+.catalogo-mujer {
+    background: #f8f4ed;
+    padding: 90px 6%;
+}
+
+.encabezado-catalogo {
+    text-align: center;
+    max-width: 750px;
+    margin: 0 auto 55px;
+}
+
+.encabezado-catalogo span {
+    display: block;
+    color: #a66c25;
+    font-size: 13px;
+    font-weight: 600;
+    letter-spacing: 4px;
+    margin-bottom: 12px;
+}
+
+.encabezado-catalogo h2 {
+    font-family: Georgia, "Times New Roman", serif;
+    font-size: clamp(38px, 4vw, 58px);
+    font-weight: 400;
+    font-style: italic;
+    color: #17130f;
+    margin: 0 0 15px;
+}
+
+.encabezado-catalogo p {
+    font-size: 16px;
+    line-height: 1.7;
+    color: #6f675e;
+    margin: 0;
+}
+
+
+/* GRID */
+
+.grid-perfumes {
+    max-width: 1250px;
+    margin: 0 auto;
+
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 32px;
+}
+
+
+/* TARJETA */
+
+.tarjeta-perfume {
+    background: #fffdf9;
+    border: 1px solid #e1c79f;
+    border-radius: 14px;
+    overflow: hidden;
+
+    box-shadow: 0 10px 30px rgba(50, 35, 20, 0.07);
+
+    transition:
+        transform 0.35s ease,
+        box-shadow 0.35s ease;
+}
+
+.tarjeta-perfume:hover {
+    transform: translateY(-7px);
+    box-shadow: 0 18px 40px rgba(50, 35, 20, 0.14);
+}
+
+
+/* IMÁGENES */
+
+.tarjeta-perfume > img {
+    display: block;
+    width: 100%;
+    aspect-ratio: 1 / 1;
+    object-fit: cover;
+}
+
+
+/* INFORMACIÓN */
+
+.info-perfume {
+    padding: 25px 25px 28px;
+}
+
+.info-perfume span {
+    display: block;
+    color: #a66c25;
+    font-size: 11px;
+    font-weight: 600;
+    letter-spacing: 2px;
+    margin-bottom: 8px;
+}
+
+.info-perfume h3 {
+    font-family: Georgia, "Times New Roman", serif;
+    color: #191510;
+    font-size: 27px;
+    font-weight: 400;
+    margin: 0 0 10px;
+}
+
+.info-perfume p {
+    color: #777067;
+    font-size: 14px;
+    margin: 0 0 22px;
+}
+
+
+/* BOTÓN */
+
+.btn-perfume {
+    display: inline-block;
+
+    background: #17130f;
+    color: #d9aa5b;
+
+    padding: 12px 20px;
+
+    font-size: 12px;
+    font-weight: 600;
+    letter-spacing: 1.3px;
+    text-transform: uppercase;
+    text-decoration: none;
+
+    transition:
+        background 0.3s ease,
+        color 0.3s ease;
+}
+
+.btn-perfume:hover {
+    background: #b17a30;
+    color: #ffffff;
+}
+
+
+/* TABLET */
+
+@media (max-width: 950px) {
+
+    .grid-perfumes {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+}
+
+
+/* CELULAR */
+
+@media (max-width: 600px) {
+
+     .hero {
+        min-height: 560px;
+        position: relative;
+        overflow: hidden;
+    }
+
+    .hero-contenido {
+        position: relative;
+        left: auto;
+        top: auto;
+        transform: none;
+
+        width: 58%;
+        max-width: 58%;
+        padding: 45px 0 30px 30px;
+        margin: 0;
+
+        z-index: 2;
+    }
+
+    .hero-subtitulo {
+        font-size: 11px;
+        line-height: 1.5;
+        letter-spacing: 2px;
+    }
+
+    .hero h1 {
+        font-size: 34px;
+        line-height: 1.08;
+        width: 100%;
+        max-width: 100%;
+        margin-top: 25px;
+    }
+
+    .hero-texto {
+        font-size: 14px;
+        line-height: 1.5;
+        width: 100%;
+        max-width: 100%;
+    }
+
+    .btn-hero {
+        font-size: 12px;
+        padding: 14px 18px;
+        white-space: nowrap;
+    }
+}
+@media (max-width: 600px) {
+    .grid-perfumes {
+        grid-template-columns: 1fr;
+        gap: 25px;
+    }
+}
