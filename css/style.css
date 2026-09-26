@@ -876,3 +876,8 @@ body {
         gap: 25px;
     }
 }
+/* Textos de la portada en negro */
+.hero .hero-subtitulo,
+.hero h1 span {
+    color: #000000;
+}
