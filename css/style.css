@@ -1188,3 +1188,106 @@ body {
             0 0 10px #fff8eb;
     }
 }
+/* =========================================
+   CATÁLOGO POR ENCARGO
+========================================= */
+
+.catalogo-encargo {
+    padding: 45px 20px 80px;
+    background-color: #f7f2e9;
+}
+
+.catalogo-encargo-contenido {
+    max-width: 1100px;
+    margin: 0 auto;
+    padding: 65px 40px;
+    text-align: center;
+    border: 1px solid #d9ad63;
+    border-radius: 18px;
+    background-color: #fffaf3;
+    box-shadow: 0 12px 35px rgba(0, 0, 0, 0.06);
+}
+
+.catalogo-etiqueta {
+    display: block;
+    margin-bottom: 14px;
+    font-size: 13px;
+    font-weight: 600;
+    letter-spacing: 5px;
+    color: #a66d27;
+}
+
+.catalogo-encargo h2 {
+    margin: 0;
+    font-family: Georgia, "Times New Roman", serif;
+    font-size: 42px;
+    font-weight: 500;
+    color: #181818;
+}
+
+.catalogo-encargo h2::after {
+    content: "";
+    display: block;
+    width: 65px;
+    height: 2px;
+    margin: 20px auto 25px;
+    background-color: #d3a455;
+}
+
+.catalogo-encargo p {
+    max-width: 650px;
+    margin: 0 auto 8px;
+    font-size: 17px;
+    line-height: 1.7;
+    color: #4d463e;
+}
+
+.catalogo-encargo .catalogo-aclaracion {
+    margin-bottom: 30px;
+    font-size: 15px;
+    color: #8b765e;
+}
+
+.btn-catalogo {
+    display: inline-block;
+    padding: 15px 32px;
+    background-color: #d5a653;
+    color: #111;
+    text-decoration: none;
+    font-size: 13px;
+    font-weight: 700;
+    letter-spacing: 1.5px;
+    border-radius: 3px;
+    transition: 0.3s ease;
+}
+
+.btn-catalogo:hover {
+    background-color: #bc8735;
+    transform: translateY(-2px);
+}
+
+
+/* RESPONSIVE */
+
+@media (max-width: 768px) {
+
+    .catalogo-encargo {
+        padding: 50px 18px;
+    }
+
+    .catalogo-encargo-contenido {
+        padding: 45px 22px;
+    }
+
+    .catalogo-encargo h2 {
+        font-size: 32px;
+    }
+
+    .catalogo-encargo p {
+        font-size: 16px;
+    }
+
+    .catalogo-etiqueta {
+        letter-spacing: 3px;
+    }
+}
