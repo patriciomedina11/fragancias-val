@@ -1146,22 +1146,45 @@ body {
     align-self: stretch;
     box-shadow: 0 10px 30px rgba(50, 35, 20, 0.07);
 }
-/* Fondo detrás del texto en computadora y tablet */
+/* Letras originales con sombra suave */
 @media (min-width: 601px) {
-    .hero-contenido {
-        position: relative;
-        isolation: isolate;
+    .hero-contenido::before {
+        content: none;
     }
 
-    .hero-contenido::before {
-        content: "";
-        position: absolute;
-        inset: 30px -20px -20px;
-        z-index: -1;
+    .hero h1 {
+        font-family: Georgia, "Times New Roman", serif;
+        font-weight: 400;
+        font-style: italic;
+        color: #1f1b18;
+        -webkit-text-stroke: 0;
 
-        background: rgba(255, 248, 235, 0.92);
-        border: 1px solid #d4ad6b;
-        border-radius: 18px;
-        box-shadow: 0 8px 25px rgba(50, 35, 20, 0.12);
+      text-shadow:
+    2px 2px 3px #fff8eb,
+    -2px -2px 3px #fff8eb,
+    2px -2px 3px #fff8eb,
+    -2px 2px 3px #fff8eb,
+    0 0 12px rgba(255, 248, 235, 0.95),
+    0 0 24px rgba(255, 248, 235, 0.85);
+    }
+
+    .hero h1 span {
+        color: #1f1b18;
+    }
+
+    .hero .hero-subtitulo {
+        font-weight: 600;
+        color: #1f1b18;
+        text-shadow:
+            0 1px 3px #fff8eb,
+            0 0 10px #fff8eb;
+    }
+
+    .hero .hero-texto {
+        font-weight: 400;
+        color: #1f1b18;
+        text-shadow:
+            0 1px 3px #fff8eb,
+            0 0 10px #fff8eb;
     }
 }
